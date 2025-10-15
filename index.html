@@ -1,80 +1,77 @@
 <!DOCTYPE html>
 <html lang="sv">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>JS Funktioner</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <header class="container">
-            <h1>avaScript-funktioner</h1>
-            <p>
-                Vi bygger en liten sida och tränar på funktioner, event och DOM.
-            </p>
-        </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JS Funktioner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <h1>JavaScript-funktioner</h1>
+      <p>Vi bygger en liten sida och tränar på funktioner, event och DOM.</p>
+    </header>
 
-        <main class="container">
-            <section class="card">
-                <h2>1. Hälsning</h2>
-                <p>Skriv ditt namn och klicka på knappen.</p>
-                <div class="row">
-                    <input id="nameInput" type="text" placeholder="Ditt namn" />
-                    <button id="greetBtn">Hälsa</button>
-                </div>
-                <p id="greetOutput" class="output"></p>
-            </section>
+    <main class="container">
+      <section class="card">
+        <h2>1. Hälsning</h2>
+        <p>Skriv ditt namn och klicka på knappen.</p>
+        <div class="row">
+          <input id="nameInput" type="text" placeholder="Ditt namn" />
+          <button id="greetBtn">Hälsa</button>
+        </div>
+        <p id="greetOutput" class="output"></p>
+      </section>
 
-            <section class="card">
-                <h2>2. Klickräknare</h2>
-                <p>Räkna antalet klick med en funktion.</p>
-                <button id="countBtn">Klicka mig</button>
-                <p id="countOutput" class="output"></p>
-            </section>
+      <section class="card">
+        <h2>2. Klickräknare</h2>
+        <p>Räkna antalet klick med en funktion.</p>
+        <button id="countBtn">Klicka mig</button>
+        <p id="countOutput" class="output"></p>
+      </section>
 
-            <section class="card">
-                <h2>3. Lista och transformation</h2>
-                <p>
-                    Vi har en lista med frukter. Med funktioner kan vi
-                    <em>transformera</em> den.
-                </p>
-                <div class="row">
-                    <button id="upperBtn">Gör VERSALER (arrow function)</button>
-                    <button id="resetFruitsBtn">Återställ</button>
-                </div>
-                <ul id="fruitList"></ul>
-            </section>
+      <section class="card">
+        <h2>3. Lista och transformation</h2>
+        <p>
+          Vi har en lista med frukter. Med funktioner kan vi
+          <em>transformera</em> den.
+        </p>
+        <div class="row">
+          <button id="upperBtn">Gör VERSALER (arrow function)</button>
+          <button id="resetFruitsBtn">Återställ</button>
+        </div>
+        <ul id="fruitList"></ul>
+      </section>
 
-            <section class="card">
-                <h2>4. Moms-kalkylator</h2>
-                <p>En enkel funktion som räknar ut pris inklusive 25% moms.</p>
-                <div class="row">
-                    <input
-                        id="priceInput"
-                        type="number"
-                        min="0"
-                        step="0.01"
-                        placeholder="Pris exkl. moms"
-                    />
-                    <button id="vatBtn">Beräkna</button>
-                </div>
-                <p id="vatOutput" class="output"></p>
-            </section>
+      <section class="card">
+        <h2>4. Moms-kalkylator</h2>
+        <p>En enkel funktion som räknar ut pris inklusive 25% moms.</p>
+        <div class="row">
+          <input
+            id="priceInput"
+            type="number"
+            min="0"
+            step="0.01"
+            placeholder="Pris exkl. moms"
+          />
+          <button id="vatBtn">Beräkna</button>
+        </div>
+        <p id="vatOutput" class="output"></p>
+      </section>
 
-            <section class="card">
-                <h2>Tema</h2>
-                <p>
-                    Växla ljust/mörkt tema – visar hur en funktion kan ändra
-                    CSS-klasser.
-                </p>
-                <button id="themeBtn">Växla tema</button>
-            </section>
-        </main>
+      <section class="card">
+        <h2>Tema</h2>
+        <p>
+          Växla ljust/mörkt tema – visar hur en funktion kan ändra CSS-klasser.
+        </p>
+        <button id="themeBtn">Växla tema</button>
+      </section>
+    </main>
 
-        <footer class="container">
-            <p>Kodning slut</p>
-        </footer>
+    <footer class="container">
+      <p>Kodning slut</p>
+    </footer>
 
-        <script defer src="functions.js"></script>
-    </body>
+    <script defer src="functions.js"></script>
+  </body>
 </html>
