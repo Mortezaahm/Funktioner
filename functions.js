@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const greetBtn = document.getElementById("greetBtn");
   const greetOutput = document.getElementById("greetOutput");
   const upperBtn = document.getElementById("upperBtn");
+  const resetArrBtn = document.getElementById("resetArrBtn");
   const countBtn = document.getElementById("countBtn");
   const vatBtn = document.getElementById("vatBtn");
   const priceInput = document.getElementById("priceInput");
@@ -67,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
 Skriv en funktion render(list) som skriver ut listan i en <ul>.
 Skriv en funktion toUpperList(list) som returnerar en ny lista med versaler (använd map).*/
 
-  let arr = ["hund", "katt", "hamster"];
+  let arr = ["hund", "katt", "hamster", "åsa", "kanin"];
   upperBtn.addEventListener("click", () => {
     let upperArr = arr.map(render);
     document.getElementById("petList").innerHTML =
@@ -81,6 +82,11 @@ Skriv en funktion toUpperList(list) som returnerar en ny lista med versaler (anv
         ul.appendChild(li);
       }
     */
+  });
+
+  resetArrBtn.addEventListener("click", () => {
+    // empty the ul and show nothing
+    setText("petList", "");
   });
 
   //Momsräknare
