@@ -1,71 +1,74 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 :root {
-    --bg: #0b0e14;
-    --text: #f4f4f4;
-    --card: #141923;
-    --muted: #9aa0a6;
-    --accent: #4f8cff;
+  --bg: #0b0e14;
+  --text: #f4f4f4;
+  --card: #141923;
+  --muted: #9aa0a6;
+  --accent: #4f8cff;
 }
 :root.light {
-    --bg: #f5f7fb;
-    --text: #0b0e14;
-    --card: #ffffff;
-    --muted: #5f6368;
-    --accent: #1a73e8;
+  --bg: #f5f7fb;
+  --text: #0b0e14;
+  --card: #ffffff;
+  --muted: #5f6368;
+  --accent: #1a73e8;
 }
 html,
 body {
-    margin: 0;
-    padding: 0;
-    font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-    background: var(--bg);
-    color: var(--text);
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
 }
 .container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 header h1 {
-    margin-bottom: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 .card {
-    background: var(--card);
-    border-radius: 16px;
-    padding: 1rem;
-    margin: 1rem 0;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  background: var(--card);
+  border-radius: 16px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 .row {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 input,
 button {
-    padding: 0.6rem 0.8rem;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.6rem 0.8rem;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 button {
-    background: var(--accent);
-    color: white;
-    cursor: pointer;
-    border: none;
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+  border: none;
 }
 button:hover {
-    filter: brightness(1.05);
+  filter: brightness(1.05);
 }
 .output {
-    font-weight: 600;
+  font-weight: 600;
 }
 ul {
-    padding-left: 1.25rem;
+  padding-left: 1.25rem;
+}
+ul > li {
+  list-style-type: none;
 }
 footer {
-    color: var(--muted);
-    font-size: 0.9rem;
-    margin-top: 2rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 2rem;
 }
